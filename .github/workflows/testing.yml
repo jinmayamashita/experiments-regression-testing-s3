@@ -56,5 +56,5 @@ jobs:
 
       - name: Regression testing
         env:
-          REG_SUIT_S3_BUCKET_NAME: ${{ secrets.REG_SUIT_S3_BUCKET_NAME }}
+          REG_S3_BUCKET_NAME: ${{ secrets.REG_S3_BUCKET_NAME }}
         run: yarn test:visual_regression
