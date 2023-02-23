@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next dev",
     "storybook": "storybook dev -p 6006 --ci",
-    "storybook:build": "storybook build"
+    "storybook:build": "storybook build",
+    "screenshot": "storycap --serverCmd \"npm run storybook\" http://localhost:6006 --serverTimeout 100000 --delay 1000",
+    "test:visual_regression": "reg-suit run"
   },
   "dependencies": {
     "next": "13.1.6"
@@ -19,6 +21,12 @@
     "@storybook/react-vite": "7.0.0-beta.53",
     "storybook": "7.0.0-beta.53",
     "typescript": "4.9.5",
+    "storycap": "4.0.0",
+    "reg-keygen-git-hash-plugin": "0.12.1",
+    "reg-notify-github-plugin": "0.12.1",
+    "reg-publish-s3-plugin": "0.12.1",
+    "reg-suit": "0.12.1",
+    "puppeteer": "19.7.2",
     "vite": "4.1.4"
   }
 }

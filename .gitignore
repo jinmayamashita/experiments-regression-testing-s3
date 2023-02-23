@@ -48,3 +48,5 @@ next-env.d.ts
 
 # Storybook
 storybook-static
+__screenshots__
+.reg
